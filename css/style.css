@@ -10,7 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  background-color: bisque;
+  background-color: rgb(128, 105, 77);
   padding: 0;
 }
 
@@ -73,7 +73,97 @@ button {
   }
 }
 
+.logo {
+  display: block;
+}
+
+.logo__img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  border: none;
+  padding: 9px 50px 9px 40px;
+  background-color: #c40b0b;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/icons/arrow_forward.svg);
+  background-repeat: no-repeat;
+  right: 11px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 /* ========================================================= HEADER STYLES ========================================================= */
+
+.header {
+  padding-top: 26px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info__item + .info__item {
+  margin-left: 30px;
+}
+
+.info__text {
+  position: relative;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  padding-left: 37px;
+}
+
+.info__text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icons/time.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  top: 0;
+}
+
+.info--phone::before {
+  background-image: url(../img/icons/phone.svg);
+}
+
+.header-top__btn {
+  margin-left: 32px;
+}
 
 /* ========================================================= SECTION PROMO ========================================================= */
 
