@@ -87,7 +87,14 @@ button {
   display: block;
   border: none;
   padding: 9px 50px 9px 40px;
-  background-color: #c40b0b;
+  background-color: rgb(196, 11, 11);
+  background: linear-gradient(
+    114deg,
+    rgba(196, 11, 11, 1) 80%,
+    rgba(227, 11, 11, 1) 80%,
+    rgba(196, 11, 11, 1) 80%,
+    rgba(227, 11, 11, 1) 80%
+  );
 
   font-weight: bold;
   font-size: 12px;
@@ -96,6 +103,18 @@ button {
   letter-spacing: 0.15px;
   text-transform: uppercase;
   color: #fff;
+  transition: 0.2s ease-in;
+}
+
+.btn:hover {
+  background-color: rgb(227, 11, 11);
+  background: linear-gradient(
+    114deg,
+    rgba(227, 11, 11) 80%,
+    rgba(196, 11, 11) 80%,
+    rgba(227, 11, 11) 80%,
+    rgba(196, 11, 11) 80%
+  );
 }
 
 .btn::before {
@@ -106,6 +125,7 @@ button {
   height: 11px;
   background-image: url(../img/icons/arrow_forward.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   right: 11px;
   top: 0;
   bottom: 0;
@@ -115,6 +135,11 @@ button {
 /* ========================================================= HEADER STYLES ========================================================= */
 
 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
   padding-top: 26px;
 }
 
@@ -165,7 +190,124 @@ button {
   margin-left: 32px;
 }
 
+.header-bottom {
+  display: flex;
+  background-color: #fff;
+  padding: 18px 44px 18px 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 27px;
+}
+
+.header-bottom__menu {
+  display: flex;
+}
+
+.header-bottom__list:not(:last-child) {
+  margin-right: 37px;
+}
+
+.header-bottom__list:first-child,
+.header-bottom__list:nth-child(5) {
+  position: relative;
+  padding-right: 16px;
+}
+
+.header-bottom__list:first-child::before,
+.header-bottom__list:nth-child(5)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  background-image: url(../img/icons/more.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.header-bottom__link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #02133c;
+  transition: 0.2s ease-in;
+}
+
+.header-bottom__link:hover {
+  color: #c40b0b;
+}
+
+.header-bottom__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-icon {
+  display: block;
+  background-image: url(../img/icons/search.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 17.5px;
+  height: 17.5px;
+  border: none;
+}
+
+.header-bottom__search {
+  margin-right: 25px;
+}
+
+.header-bottom__cart {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.header-bottom__cart::before {
+  content: "2";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 4px;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 22px;
+  color: #fff;
+  width: 16px;
+  height: 16px;
+  background-color: #c40b0b;
+  border-radius: 100%;
+  right: -5px;
+  top: -8px;
+}
+
 /* ========================================================= SECTION PROMO ========================================================= */
+
+.promo {
+  background-image: url(../img/bg/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 280px 0 312px 0;
+}
+
+.promo__title {
+  max-width: 583px;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
 
 /* ========================================================= SECTION WHOWEARE ======================================================= */
 
