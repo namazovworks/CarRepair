@@ -10,8 +10,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  background-color: rgb(128, 105, 77);
   padding: 0;
+  background-color: #f5f5f5;
 }
 
 a,
@@ -130,6 +130,51 @@ button {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+.title {
+  display: block;
+  position: relative;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #4b4b4b;
+  padding-left: 32px;
+  margin-bottom: 33px;
+}
+
+.title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.desc {
+  max-width: 583px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #02133c;
+  margin-bottom: 36px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #4b4b4b;
+  margin-bottom: 54px;
 }
 
 /* ========================================================= HEADER STYLES ========================================================= */
@@ -311,7 +356,44 @@ button {
 
 /* ========================================================= SECTION WHOWEARE ======================================================= */
 
+.whoweare {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 75%;
+  margin: auto;
+  margin-top: -80px;
+  max-width: 1020px;
+  max-height: 700px;
+  padding: 100px 87px;
+  background-color: #fff;
+}
+
+.whoweare::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/bg/bg-gears.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 642px;
+  height: 450px;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+.whoweare__img {
+  display: block;
+  max-width: 100%;
+}
+
 /* ========================================================= SECTION PROMISE ======================================================== */
+
+.promise {
+  padding: 230px 0 120px;
+}
 
 /* ========================================================= SECTION SERVICES ======================================================= */
 
