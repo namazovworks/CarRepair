@@ -455,29 +455,26 @@ button {
   height: 100%;
 }
 
-.promise-video__title {
+.promise-video-wrap {
   position: absolute;
+  right: 210px;
+  top: 112px;
+}
+
+.promise-video__title {
   max-width: 411px;
   font-weight: 900;
   font-size: 36px;
   line-height: 42px;
   color: #ffffff;
-  right: 15%;
-  left: 55%;
-  top: 112px;
-  z-index: 1;
 }
 
 .play-icon {
   font-size: 0;
-  position: absolute;
   display: block;
   background-image: url(../img/icons/play.svg);
   width: 140px;
   height: 140px;
-  left: 55%;
-  top: 240px;
-  right: 15%;
   opacity: 1;
   transition: 0.3s ease-in;
 }
