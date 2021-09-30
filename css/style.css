@@ -520,7 +520,7 @@ button {
 .grid-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 340px 340px;
+  grid-template-rows: 1fr 1fr;
   gap: 24px;
   justify-content: space-between;
   margin-bottom: 66px;
