@@ -377,7 +377,7 @@ button {
   top: 75%;
   margin: auto;
   margin-top: -80px;
-  max-width: 1020px;
+  max-width: 1000px;
   max-height: 700px;
   padding: 100px 87px;
   background-color: #fff;
@@ -683,8 +683,48 @@ button {
 }
 
 /* ========================================================= SECTION GALLERY ========================================================= */
-.section {
-	
+
+/* Доделать секцию ( бэкграунды) */
+.gallery {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 75%;
+  margin: auto;
+  margin-top: -80px;
+  max-width: 1000px;
+  max-height: 700px;
+  padding: 100px 87px;
+  margin-bottom: 120px;
+  background-color: #fff;
+}
+
+.gallery::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/bg/bg-gears-services.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(180deg);
+  width: 642px;
+  height: 450px;
+  left: -200px;
+  bottom: -200px;
+  z-index: -1;
+}
+
+.gallery-tabs {
+  display: block;
+  overflow: hidden;
+  width: 800px; /* Значения для примера, исправить */
+  height: 400px; /* Значения для примера, исправить */
+}
+
+.gallery__img {
+  display: block;
+  min-width: 100%;
 }
 
 /* ========================================================= SECTION CUSTOMERS ======================================================= */
