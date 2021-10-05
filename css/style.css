@@ -716,15 +716,17 @@ button {
 }
 
 .gallery-tabs {
-  display: block;
   overflow: hidden;
-  width: 800px; /* Значения для примера, исправить */
-  height: 400px; /* Значения для примера, исправить */
+}
+
+.gallery-img-wrap {
+  width: 856px;
+  height: 480px;
 }
 
 .gallery__img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
 }
 
 /* ========================================================= SECTION CUSTOMERS ======================================================= */
