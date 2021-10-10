@@ -641,7 +641,7 @@ button {
   width: 50%;
   padding: 11px;
 }
-/* ИСПРАВИТЬ ПАДДИНГ */
+
 .input {
   width: 100%;
   padding: 12px 24px;
@@ -719,7 +719,6 @@ button {
 
 /* ========================================================= SECTION GALLERY ========================================================= */
 
-/* Доделать секцию ( бэкграунды) */
 .gallery {
   position: relative;
   left: 0;
@@ -750,10 +749,6 @@ button {
   bottom: -200px;
   z-index: -1;
 }
-
-/* .gallery-tabs {
-  overflow: hidden;
-} */
 
 .gallery-img-wrap {
   position: relative;
