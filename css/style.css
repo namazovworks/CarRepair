@@ -578,8 +578,42 @@ button {
 /* ========================================================= SECTION FORM =========================================================== */
 
 .form {
+  position: relative;
   padding: 130px 0 210px 0;
   background-color: #02133c;
+  z-index: 1;
+}
+
+.form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/bg/bg-gears-services.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(180deg);
+  width: 642px;
+  height: 450px;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.form:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/bg/bg-gears.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 642px;
+  height: 450px;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .form-wrap {
@@ -698,6 +732,7 @@ button {
   padding: 100px 87px;
   margin-bottom: 120px;
   background-color: #fff;
+  z-index: 1;
 }
 
 .gallery::before {
@@ -716,18 +751,94 @@ button {
   z-index: -1;
 }
 
-.gallery-tabs {
+/* .gallery-tabs {
   overflow: hidden;
-}
+} */
 
 .gallery-img-wrap {
+  position: relative;
   width: 856px;
   height: 480px;
+  overflow: hidden;
+  z-index: 1;
 }
+
+/* .live::before {
+  content: "live";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 42px;
+  top: 33px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  width: 50px;
+  height: 30px;
+  color: #fff;
+  background-color: #21c613;
+  z-index: 2;
+} */
 
 .gallery__img {
   display: block;
   max-width: 100%;
+}
+
+.tabs-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.tabs-list__item {
+  width: 100%;
+}
+
+.tabs-list__link {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #02133c;
+  transition: 0.2s ease-in;
+  text-align: center;
+
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d5d5d5;
+  transition: 0.2s ease-in;
+}
+
+.tabs-list__link:hover {
+  font-weight: 500;
+  color: #c40b0b;
+  border-bottom: 4px solid #c40b0b;
+}
+
+.tabs-link--active {
+  font-weight: 500;
+  color: #c40b0b;
+  border-bottom: 4px solid #c40b0b;
+}
+
+.stream {
+  position: relative;
+}
+
+.stream::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #21c613;
+  right: 25px;
+  top: 0;
 }
 
 /* ========================================================= SECTION CUSTOMERS ======================================================= */
