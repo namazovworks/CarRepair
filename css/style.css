@@ -420,13 +420,14 @@ button {
 .promise-box__item {
   position: relative;
   padding-left: 85px;
-}
-
-.promise-box__item:not(:last-child) {
   margin-right: 20px;
 }
 
-.promise__title::before {
+.promise-box__item:last-child {
+  margin-right: 0;
+}
+
+.promise-box__item::before {
   content: "";
   display: block;
   position: absolute;
@@ -435,6 +436,14 @@ button {
   background-image: url(../img/icons/quality.svg);
   left: 0;
   top: 0;
+}
+
+.item--serivices::before {
+  background-image: url(../img/icons/car-services.svg);
+}
+
+.item--team::before {
+  background-image: url(../img/icons/car-team.svg);
 }
 
 .promise__text {
