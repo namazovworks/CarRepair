@@ -972,6 +972,7 @@ button {
   width: 515px;
   height: 343px;
   overflow: hidden;
+  z-index: -1;
 }
 
 .impact__img {
