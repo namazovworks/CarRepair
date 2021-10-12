@@ -861,9 +861,6 @@ button {
   flex-basis: 32.4%;
 }
 
-.customers__desc {
-}
-
 .customers-card {
   flex-basis: 32.4%;
   background-color: #fff;
@@ -909,13 +906,6 @@ button {
   background-image: url(../img/avatar-1.jpg);
   background-position: center;
 }
-
-/* .card__img {
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} */
 
 /* ========================================================= SECTION IMPACT ========================================================== */
 .impact {
