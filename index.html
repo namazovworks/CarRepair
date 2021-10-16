@@ -303,45 +303,54 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<div class="container">
+		<div class="footer__container container">
 			<div class="footer-box">
 				<div class="footer-box__item">
 					<a class="footer-box__logo logo" href="#">
-						<img src="./img/logo-footer.svg" alt="logo" class="logo__img">
+						<img src="./img/logo-footer.svg" alt="logo" class="footer-logo__img">
 					</a>
 
 					<p class="footer-box__desc">This is a blurb about the company sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. </p>
 					<div class="footer-box__social">
-						<img class="footer__icon" src="./img/icons/facebook.svg" alt="facebook">
-						<img class="footer__icon" src="./img/icons/twitter.svg" alt="facebook">
-						<img class="footer__icon" src="./img/icons/instagram.svg" alt="facebook">
-						<img class="footer__icon" src="./img/icons/youtube.svg" alt="facebook">
+						<a class="footer-social__link" href="#"><img class="footer__icon" src="./img/icons/facebook.svg" alt="facebook"></a>
+						<a class="footer-social__link" href="#"><img class="footer__icon" src="./img/icons/twitter.svg" alt="facebook"></a>
+						<a class="footer-social__link" href="#"><img class="footer__icon" src="./img/icons/instagram.svg" alt="facebook"></a>
+						<a class="footer-social__link" href="#"><img class="footer__icon" src="./img/icons/youtube.svg" alt="facebook"></a>
 					</div>
 				</div>
 				<div class="footer-box__item">
-					<h3>EXPLORE LINKS</h3>
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Specials</a></li>
-						<li><a href="#">Estimates</a></li>
-					</ul>
-
-					<ul>
-						<li><a href="#">Reviews</a></li>
-						<li><a href="#">Shop</a></li>
-						<li><a href="#">Careers</a></li>
-						<li><a href="#">FAQs</a></li>
-					</ul>
+					<h3 class="footer-box__title">EXPLORE LINKS</h3>
+					<div class="footer-list-wrap">
+						<ul class="footer-box__menu">
+							<li class="footer-box__list"><a class="footer-box__link" href="#">About</a></li>
+							<li class="footer-box__list"><a class="footer-box__link" href="#">Services</a></li>
+							<li class="footer-box__list"><a class="footer-box__link" href="#">Specials</a></li>
+							<li class="footer-box__list"><a class="footer-box__link" href="#">Estimates</a></li>
+						</ul>
+	
+						<ul class="footer-box__menu">
+							<li class="footer-box__list"><a class="footer-box__link" href="#">Reviews</a></li>
+							<li class="footer-box__list"><a class="footer-box__link" href="#">Shop</a></li>
+							<li class="footer-box__list"><a class="footer-box__link" href="#">Careers</a></li>
+							<li class="footer-box__list"><a class="footer-box__link" href="#">FAQs</a></li>
+						</ul>
+					</div>
 				</div>
 				<!-- Спрсоить как лучше делать время и адрес в футере ( тегом а, в целом как будет правильно) -->
 				<div class="footer-box__item">
-					<h3>CONTACT</h3>
-					<span>321 Pikes Place Parkway Seattle, WA 54321</ы>
-					<a href="tel:5557654321">(555) 765-4321</a>
-					<a href="mailto:Info@company.com">Info@company.com</a>	
-					<span>Mon - Sat:  7:000 am - 6:00 pm</span>	
+					<h3 class="footer-box__title">CONTACT</h3>
+					<a class="footer-box__info place-icon">321 Pikes Place Parkway Seattle, WA 54321</ы>
+					<a class="footer-box__info phone-icon" href="tel:5557654321">(555) 765-4321</a>
+					<a class="footer-box__info email-icon" href="mailto:Info@company.com">Info@company.com</a>	
+					<a class="footer-box__info time-icon">Mon - Sat:  7:000 am - 6:00 pm</a>	
 				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="footer-bottom__container">
+				<p class="footer-bottom__text">Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</p>
+				<p class="footer-bottom__text">&copy; 2018 Company.   Privacy Policy | Terms & Conditions</p>
 			</div>
 		</div>
 	</footer>
