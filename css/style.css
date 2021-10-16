@@ -28,12 +28,6 @@ ul {
   margin: 0;
 }
 
-input,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-}
-
 h1,
 h2,
 h3,
@@ -53,7 +47,6 @@ section {
 
 button {
   cursor: pointer;
-  background-color: inherit;
 }
 
 .container {
