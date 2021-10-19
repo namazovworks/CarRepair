@@ -522,12 +522,12 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(17, 17, 17, 0.4);
+  background-color: rgba(17, 17, 17, 0.95);
   border: none;
   opacity: 0;
   visibility: hidden;
   transition: 0.2s ease-in;
-  z-index: 22;
+  z-index: 72;
 }
 
 .promise__modal:target {
@@ -535,16 +535,22 @@ button {
   visibility: visible;
 }
 
+.promise__modal:target .modal__frame {
+  transform: translate(0px, 0%);
+}
+
 .modal__frame {
   border: 10px solid rgba(17, 17, 17, 0.4);
   width: 1000px;
   height: 600px;
+  transform: translate(0px, -100%);
+  transition: 0.4s ease-in;
 }
 
 .close {
   position: absolute;
   font-size: 80px;
-  color: #02133c;
+  color: #fff;
   right: 0;
   top: 0;
   left: 50px;
