@@ -131,7 +131,17 @@
 				<img src="./img/bg/video-bg.jpg" alt="video-bg" class="promise-video__img">
 				<div class="promise-video-wrap">
 					<h3 class="promise-video__title">Nemo enim ipsam voluptatem quia voluptas in proident</h3>
-					<a href="#" class="play-icon">Кнопка Play</a>
+					<a href="#modal" class="play-icon">Кнопка Play</a>
+
+					<!-- Сделал модалку через подскази у Вас, есть пару вопросов: 1) можно ли сделать при клике в лююбое пространство, чтобы модалка закрывалась?
+					2) После нажатия кнопки play, играет видео, нажимаю крестик (close), модалка закрываеться, но на фоне играет видео, как можно решить этот момент? -->
+					
+					<dialog  class="promise__modal" id="modal" tabindex="-1">
+						<div>
+							<a href="#modalTrigger" class="close" aria-label="Close dialog">&times;</a>
+							<iframe class="modal__frame" src="https://www.youtube.com/embed/vlYFmCfFqGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</dialog>
 				</div>
 			</div>
 		</section>
