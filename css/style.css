@@ -541,7 +541,7 @@ button {
 
 .modal__frame {
   border: 10px solid rgba(17, 17, 17, 0.4);
-  width: 1000px;
+  width: 800px;
   height: 600px;
   transform: translate(0px, -100%);
   transition: 0.4s ease-in;
@@ -850,6 +850,10 @@ button {
 } */
 
 .gallery__img {
+  display: none;
+}
+
+.gallery__img--active {
   display: block;
   max-width: 100%;
 }

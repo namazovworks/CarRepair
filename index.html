@@ -221,20 +221,21 @@
 			</div>
 		</section>
 		<!-- Не смог сделать кнопоку LIVE на картинках -->
+		<!-- Спросить про плавный переход -->
 		<section class="gallery">
 			<h2 class="gallery__title title">GALLERY & LIVE STREAMS</h2>
 			<p class="gallery__desc desc">Check out our hard workers</p>
 			
 			<div class="gallery-tabs">
 				<ul class="tabs-list">
-					<li class="tabs-list__item"><a class="tabs-list__link" href="#gallery">Gallery</a></li>
-					<li class="tabs-list__item"><a class="tabs-list__link tabs-link--active stream" href="#galler-1">Live stream: Bay 1</a></li>
+					<li class="tabs-list__item"><a class="tabs-list__link tabs-link--active" href="#gallery">Gallery</a></li>
+					<li class="tabs-list__item"><a class="tabs-list__link stream" href="#galler-1">Live stream: Bay 1</a></li>
 					<li class="tabs-list__item"><a class="tabs-list__link stream" href="#gallery-2">Live stream: Bay 2</a></li>
 					<li class="tabs-list__item"><a class="tabs-list__link stream" href="#gallery-3">Live stream: Bay 3</a></li>
 				</ul>
 				
 				<div class="gallery-img-wrap">
-					<img id="gallery" src="./img/stream.jpg" alt="motor" class="gallery__img">
+					<img id="gallery" src="./img/stream.jpg" alt="motor" class="gallery__img gallery__img--active">
 					<img id="galler-1" src="./img/stream-2.jpg" alt="motor-1" class="gallery__img live">
 					<img id="gallery-2" src="./img/stream.jpg" alt="motor-2" class="gallery__img live">
 					<img id="gallery-3" src="./img/stream-2.jpg" alt="motor-3" class="gallery__img">
@@ -364,5 +365,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="./js/main.js"></script>
 </body>
 </html>
