@@ -56,22 +56,6 @@ button {
   padding: 0 10px;
 }
 
-@media (max-width: 991.98px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (max-width: 767.98px) {
-  .container {
-    max-width: 750px;
-  }
-}
-@media (max-width: 479.98px) {
-  .container {
-    max-width: none;
-  }
-}
-
 .logo {
   display: block;
 }
@@ -468,27 +452,38 @@ button {
 .promise-video {
   position: relative;
   margin-top: 120px;
+  width: 100%;
+  min-height: 500px;
 }
 
-.promise-video::before {
+.promise-video::before,
+.promise-video::after {
   content: "";
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
-.promise-video__img {
-  display: block;
-  width: 100%;
-  height: 100%;
+.promise-video::after {
+  background-image: url(../img/bg/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.promise-video__container {
+  position: relative;
 }
 
 .promise-video-wrap {
   position: absolute;
-  right: 210px;
-  top: 112px;
+  max-width: 410px;
+  right: 10px;
+  top: 110px;
+  z-index: 3;
 }
 
 .promise-video__title {
@@ -527,7 +522,7 @@ button {
   opacity: 0;
   visibility: hidden;
   transition: 0.2s ease-in;
-  z-index: 72;
+  z-index: 99;
 }
 
 .promise__modal:target {
@@ -555,6 +550,7 @@ button {
   top: 0;
   left: 50px;
   transition: 0.2s ease-in;
+  z-index: 1;
 }
 
 .close:hover {
@@ -1264,4 +1260,25 @@ button {
   line-height: 18px;
   letter-spacing: 0.15px;
   color: #959595;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 970px;
+  }
+
+  /* Продолжить адаптив */
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 479px) {
+  .container {
+    max-width: none;
+  }
 }
