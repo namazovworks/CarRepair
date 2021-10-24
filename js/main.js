@@ -6,7 +6,7 @@ tabs.forEach((item) => {
 		e.preventDefault();
 		const id = e.target.getAttribute('href').replace('#', '')
 
-		document.querySelectorAll('.tabs-list__link').forEach(
+		tabs.forEach(
 			(child) => child.classList.remove('tabs-link--active') 
 		);
 
