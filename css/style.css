@@ -775,6 +775,13 @@ button {
   opacity: 0;
 }
 
+.thousand {
+  font-weight: 900;
+  font-size: 96px;
+  text-align: center;
+  color: #c40b0b;
+}
+
 .number__real {
   font-weight: 900;
   font-size: 96px;
@@ -846,7 +853,7 @@ button {
   height: 30px;
   color: #fff;
   background-color: #21c613;
-  z-index: 2;
+  z-index: 3;
 } */
 
 .gallery__img {
@@ -1055,10 +1062,13 @@ button {
 }
 
 .impact-box__number {
-  font-weight: 900;
   font-size: 36px;
   line-height: 42px;
-  color: #c40b0b;
+}
+
+.impact-box__thousand {
+  display: inline;
+  font-size: 36px;
 }
 
 .impact-box__title {
@@ -1195,6 +1205,7 @@ button {
 }
 
 .footer-box__info {
+  font-style: normal;
   position: relative;
   display: block;
   font-size: 14px;
