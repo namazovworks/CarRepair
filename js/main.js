@@ -24,7 +24,8 @@ document.querySelector('.gallery__img').click();
 // BURGER
 
 
-// COUNTER
+// COUNTER - Спросить про скролл (подробно)
+
 const counters = document.querySelectorAll('.number__real');
 
 counters.forEach((counter) => {
