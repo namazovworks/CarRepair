@@ -1496,6 +1496,7 @@ button {
 
   .whoweare {
     padding: 80px 10px;
+    max-height: 550px;
   }
 
   .whoweare__text {
