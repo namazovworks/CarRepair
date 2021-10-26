@@ -23,6 +23,15 @@ document.querySelector('.gallery__img').click();
 
 // BURGER
 
+const menuIcon = document.querySelector('.toggle-menu');
+const menuHeader = document.querySelector('.header');
+
+if (menuIcon) {
+  	menuIcon.addEventListener("click", function (e) {
+		menuIcon.classList.toggle('toggle-menu-open');
+		menuHeader.classList.toggle('header__menu-open');
+	});
+}
 
 // COUNTER - Спросить про скролл (подробно)
 

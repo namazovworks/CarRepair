@@ -168,6 +168,35 @@ button {
   margin-bottom: 20px;
 }
 
+.toggle-menu {
+  display: none;
+  width: 30px;
+  height: 21px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  top: 35px;
+  right: 10px;
+}
+
+.toggle-menu:before,
+.toggle-menu:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.2s ease;
+}
+
 /* ========================================================= HEADER STYLES ========================================================= */
 
 .header {
@@ -1268,17 +1297,210 @@ button {
   .container {
     max-width: 970px;
   }
+  /* ====================== header  ======================*/
+  .toggle-menu {
+    display: block;
+  }
 
-  /* Продолжить адаптив */
+  .toggle-menu-open {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .toggle-menu-open:before {
+    transform: rotate(-45deg);
+    background-color: #fff;
+  }
+
+  .toggle-menu-open:after {
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+
+  .info__item {
+    display: none;
+  }
+
+  .header-top__btn {
+    display: none;
+  }
+
+  .header__menu-open {
+    position: fixed;
+    z-index: 2222;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px 15px;
+    background-color: rgb(2, 19, 60, 0.9);
+  }
+
+  .header__menu-open .header-top {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .header__menu-open .header-top__logo {
+    display: none;
+  }
+
+  .header__menu-open .header-top__info {
+    flex-basis: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .header__menu-open .info__item {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .header__menu-open .header-top__btn {
+    display: block;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .header__menu-open .header-bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 18px 0;
+  }
+
+  .header__menu-open .header-bottom .header-bottom__menu {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+
+  .header__menu-open .header-bottom__list {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .header__menu-open .header-bottom__link {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .header-bottom__list:hover .dropdown-menu {
+    opacity: 1;
+    left: 0;
+    background-color: rgb(2, 19, 60);
+    border: 1px solid #fff;
+  }
+
+  .header__menu-open .header-bottom__field {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .header__menu-open .header-bottom__cart {
+    padding-left: 15px;
+    border-left: 1px solid #dadada;
+  }
+
+  /* ====================== promo  ======================*/
+
+  .promo {
+    padding: 170px 0 210px 0;
+    background-position-x: 80%;
+  }
+
+  .promo__title {
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 40px;
+  }
+
+  /* ====================== promise  ======================*/
 }
 
 @media (max-width: 767px) {
   .container {
     max-width: 750px;
   }
+
+  .desc {
+    font-size: 32px;
+    line-height: 42px;
+    color: #02133c;
+    margin-bottom: 30px;
+  }
+
+  /* ====================== header  ======================*/
+
+  .header__menu-open .header-top__info {
+    justify-content: center;
+  }
+
+  .header__menu-open .header-top__btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header__menu-open .info__item {
+    margin-left: 0;
+  }
+
+  /* ====================== whoweare  ======================*/
+
+  .whoweare {
+    padding: 100px 10px;
+    max-height: 600px;
+  }
+
+  .whoweare__text {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  /* ====================== promise  ======================*/
 }
+
 @media (max-width: 479px) {
   .container {
     max-width: none;
   }
+
+  .desc {
+    font-size: 28px;
+  }
+
+  /* ====================== promo  ======================*/
+
+  .promo {
+    padding: 150px 0 180px 0;
+    background-position-x: 80%;
+  }
+
+  .promo__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* ====================== whoweare  ======================*/
+
+  .whoweare {
+    padding: 80px 10px;
+  }
+
+  .whoweare__text {
+    margin-bottom: 30px;
+  }
+
+  /* ====================== promise  ======================*/
 }
