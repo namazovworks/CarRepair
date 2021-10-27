@@ -446,8 +446,8 @@ button {
 
 .promise-box__item {
   position: relative;
+  margin-right: 15px;
   padding-left: 85px;
-  margin-right: 20px;
 }
 
 .promise-box__item:last-child {
@@ -912,6 +912,7 @@ button {
 
   padding-bottom: 18px;
   border-bottom: 1px solid #d5d5d5;
+  margin-bottom: -1px;
   transition: 0.2s ease-in;
 }
 
@@ -919,12 +920,14 @@ button {
   font-weight: 500;
   color: #c40b0b;
   border-bottom: 4px solid #c40b0b;
+  margin-bottom: -4px;
 }
 
 .tabs-link--active {
   font-weight: 500;
   color: #c40b0b;
   border-bottom: 4px solid #c40b0b;
+  margin-bottom: -4px;
 }
 
 .stream {
@@ -1338,8 +1341,8 @@ button {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    padding: 80px 0px;
+    height: auto;
+    padding: 40px 0px 10px 0;
     background-color: rgb(2, 19, 60, 0.9);
   }
 
@@ -1377,13 +1380,13 @@ button {
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    padding: 18px 0;
+    padding: 10px 0;
     margin-top: 0;
   }
 
   .header__menu-open .header-bottom .header-bottom__menu {
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 
   .header__menu-open .header-bottom__list {
@@ -1428,6 +1431,127 @@ button {
   }
 
   /* ====================== promise  ======================*/
+  .promise {
+    padding-top: 150px;
+  }
+
+  .promise-box {
+    display: flex;
+    align-items: center;
+    margin-top: 68px;
+    flex-wrap: wrap;
+  }
+
+  .promise-box__item {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .promise__text {
+    max-width: 100%;
+  }
+
+  .modal__frame {
+    width: 700px;
+    height: 450px;
+  }
+
+  /* ====================== services  ======================*/
+
+  .section-services {
+    padding: 100px 0 110px 0;
+  }
+
+  .grid-wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  /* ====================== form  ======================*/
+  .form {
+    padding: 120px 0 200px 0;
+  }
+
+  .form::before {
+    max-width: 100%;
+  }
+
+  .form-wrap {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .form-field {
+    margin-bottom: 20px;
+  }
+
+  .form__btn {
+    width: 100%;
+  }
+
+  /* ====================== gallery  ======================*/
+
+  .gallery {
+    padding: 100px 10px;
+    margin-bottom: 110px;
+  }
+
+  .gallery::before {
+    max-width: 100%;
+  }
+
+  .tabs-list {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .tabs-list__item {
+    width: 45%;
+    margin-bottom: 30px;
+    padding: 4px;
+  }
+
+  .gallery-img-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 400px;
+  }
+
+  .gallery__img {
+    object-fit: cover;
+    height: 400px;
+  }
+
+  .gallery__img--active {
+    width: 100%;
+  }
+
+  /* ====================== customers ======================*/
+  .customers {
+    padding-top: 100px;
+    padding-bottom: 180px;
+  }
+
+  .customers-box {
+    flex-wrap: wrap;
+  }
+
+  .customers-box__item {
+    flex: 0 0 100%;
+  }
+
+  .customers-card {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  .customers-card__text {
+  }
+
+  /* ====================== impact ======================*/
 }
 
 @media (max-width: 767px) {
@@ -1457,6 +1581,18 @@ button {
     margin-left: 0;
   }
 
+  .header__menu-open .info__text {
+    font-size: 10px;
+    padding-left: 0;
+  }
+
+  .info__text::before {
+    display: none;
+  }
+
+  .header__menu-open .header-top__btn {
+  }
+
   /* ====================== whoweare  ======================*/
 
   .whoweare {
@@ -1470,6 +1606,113 @@ button {
   }
 
   /* ====================== promise  ======================*/
+  .promise {
+    padding-top: 180px;
+  }
+
+  .modal__frame {
+    width: 420px;
+    height: 320px;
+  }
+
+  .close {
+    font-size: 60px;
+    left: 20px;
+  }
+
+  .promise-video {
+    margin-top: 100px;
+    min-height: 450px;
+  }
+
+  .promise-video::after {
+    background-position-x: 30%;
+  }
+
+  .promise-video__title {
+    font-size: 32px;
+  }
+
+  .play-icon {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+  }
+
+  /* ====================== services  ======================*/
+
+  .section-services {
+    padding: 90px 0 100px 0;
+  }
+
+  .grid-wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  /* ====================== form  ======================*/
+
+  .form {
+    padding: 110px 0 170px 0;
+  }
+
+  .form-field {
+    max-width: 100%;
+    padding: 60px 30px;
+  }
+
+  .input-wrap {
+    width: 100%;
+  }
+
+  .number__real,
+  .thousand {
+    font-size: 76px;
+  }
+
+  /* ====================== gallery  ======================*/
+
+  .gallery {
+    padding: 100px 10px;
+    margin-bottom: 110px;
+  }
+
+  .tabs-list {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .tabs-list__item {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  .gallery-img-wrap {
+    height: 350px;
+  }
+
+  .gallery__img {
+    height: 350px;
+  }
+
+  .stream::before {
+    right: 0;
+  }
+
+  /* ====================== customers ======================*/
+
+  .customers {
+    padding-top: 90px;
+    padding-bottom: 160px;
+  }
+
+  .customers-card__text {
+    font-size: 14px;
+  }
+
+  /* ====================== impact ======================*/
 }
 
 @media (max-width: 479px) {
@@ -1505,4 +1748,77 @@ button {
   }
 
   /* ====================== promise  ======================*/
+
+  .promise {
+    padding-top: 150px;
+  }
+
+  .modal__frame {
+    width: 300px;
+    height: 300px;
+  }
+
+  .close {
+    font-size: 50px;
+  }
+
+  .promise-video {
+    margin-top: 80px;
+    min-height: 400px;
+  }
+
+  .promise-video__title {
+    font-size: 28px;
+  }
+
+  .play-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .promise-video-wrap {
+    left: 10px;
+  }
+
+  /* ====================== services  ======================*/
+
+  .section-services {
+    padding: 80px 0 90px 0;
+  }
+
+  /* ====================== form  ======================*/
+
+  .form {
+    padding: 90px 0 150px 0;
+  }
+
+  .form-field {
+    padding: 50px 20px;
+  }
+
+  .number__real,
+  .thousand {
+    font-size: 66px;
+  }
+
+  /* ====================== gallery  ======================*/
+
+  .gallery {
+    padding: 80px 10px;
+  }
+
+  .tabs-list__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .gallery-img-wrap {
+    height: 300px;
+  }
+
+  .gallery__img {
+    height: 300px;
+  }
+
+  /* ====================== impact ======================*/
 }
