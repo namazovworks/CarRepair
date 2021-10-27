@@ -1303,6 +1303,8 @@ button {
   /* ====================== header  ======================*/
   .toggle-menu {
     display: block;
+    position: fixed;
+    z-index: 2222222;
   }
 
   .toggle-menu-open {
