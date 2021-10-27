@@ -1550,9 +1550,6 @@ button {
     margin-bottom: 20px;
   }
 
-  .customers-card__text {
-  }
-
   /* ====================== impact ======================*/
 }
 
@@ -1590,9 +1587,6 @@ button {
 
   .info__text::before {
     display: none;
-  }
-
-  .header__menu-open .header-top__btn {
   }
 
   /* ====================== whoweare  ======================*/
