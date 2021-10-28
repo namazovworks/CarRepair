@@ -1120,7 +1120,6 @@ button {
   max-width: 100%;
 }
 
-/* Почему-то не работал position-absolute, спросить совета */
 .impact-cta {
   position: relative;
   display: flex;
