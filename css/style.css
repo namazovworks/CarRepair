@@ -1285,6 +1285,7 @@ button {
   justify-content: space-between;
   max-width: 1080px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .footer-bottom__text {
@@ -1534,7 +1535,7 @@ button {
   /* ====================== customers ======================*/
   .customers {
     padding-top: 100px;
-    padding-bottom: 180px;
+    padding-bottom: 100px;
   }
 
   .customers-box {
@@ -1551,6 +1552,64 @@ button {
   }
 
   /* ====================== impact ======================*/
+
+  .impact {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .impact-top {
+    flex-direction: column;
+  }
+
+  .impact-img-wrap {
+    position: static;
+    width: 100%;
+    height: 315px;
+    margin: 0 auto;
+    right: 0;
+    top: 0;
+    margin-bottom: 50px;
+  }
+
+  .impact__img {
+    height: 315px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .impact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 130px;
+  }
+
+  .impact-box__item {
+    flex-basis: 50%;
+    position: relative;
+    padding: 20px 20px 20px 82px;
+  }
+
+  .impact-cta {
+    flex-wrap: wrap;
+    bottom: 0;
+    padding: 40px 10px;
+  }
+
+  .impact-cta__desc {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .impact-cta__btn {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1701,7 +1760,7 @@ button {
 
   .customers {
     padding-top: 90px;
-    padding-bottom: 160px;
+    padding-bottom: 90px;
   }
 
   .customers-card__text {
@@ -1709,6 +1768,94 @@ button {
   }
 
   /* ====================== impact ======================*/
+
+  .impact {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+
+  .impact-img-wrap {
+    width: 100%;
+    height: 300px;
+  }
+
+  .impact__img {
+    height: 300px;
+  }
+
+  .impact-box {
+    margin-bottom: 100px;
+  }
+
+  .impact-box__item {
+    padding: 20px 10px 20px 82px;
+  }
+
+  .impact-box__number {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .impact-box__thousand {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .impact-cta {
+    padding: 30px 10px;
+  }
+
+  .impact-cta__btn {
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .impact__desc {
+    color: #fff;
+  }
+
+  .impact-cta__desc {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+
+  /* ====================== footer ======================*/
+
+  .footer__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .footer-box {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .footer-box__item {
+    flex: 0 0 100%;
+    margin-bottom: 40px;
+  }
+
+  .footer-box__item:nth-child(2) {
+    order: 1;
+  }
+
+  .footer-box__item:first-child {
+    margin-bottom: 0;
+  }
+
+  .footer-bottom__container {
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom__text {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom__text:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1817,4 +1964,53 @@ button {
   }
 
   /* ====================== impact ======================*/
+
+  .impact {
+    padding-top: 80px;
+  }
+
+  .impact-img-wrap {
+    height: 250px;
+  }
+
+  .impact__img {
+    height: 250px;
+  }
+
+  .impact-box {
+    margin-bottom: 80px;
+  }
+
+  .impact-box__item {
+    flex-basis: 100%;
+  }
+
+  .impact-box__number {
+    font-size: 30px;
+  }
+
+  .impact-box__thousand {
+    font-size: 30px;
+  }
+
+  .impact-cta__btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .impact__desc {
+    color: #fff;
+  }
+
+  .impact-cta__desc {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+
+  /* ====================== footer ======================*/
+
+  .footer__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
