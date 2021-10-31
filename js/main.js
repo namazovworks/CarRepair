@@ -35,22 +35,24 @@ if (menuIcon) {
 
 // COUNTER
 
-const counters = document.querySelectorAll('.number');
+window.addEventListener('scroll', () => {
 
-counters.forEach((counter) => {
-	counter.innerHTML = "0";
+	const counters = document.querySelectorAll('.number');
+	counters.forEach((number) => {
+	number.innerHTML = "0";
 
-	const updateCounter = () => {
-		const target = +counter.getAttribute("data-target");
-		const c = +counter.innerText;
+		const updateCounter = () => {
+			const target = +number.getAttribute("data-target");
+			const c = +number.innerText;
 
-		if (c < target) {
-			counter.innerText = c + 1;
-			setTimeout(updateCounter, 80);
-		} else {
-			counter.innerText = target;
-		}
-	};
-	updateCounter();
-})
+			if (c < target) {
+				number.innerText = c + 1;
+				setTimeout(updateCounter, 100);
+			} else {
+				number.innerText = target;
+			}
+		};
+		updateCounter();
+	})
+});
 
