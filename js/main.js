@@ -33,9 +33,9 @@ if (menuIcon) {
 	});
 }
 
-// COUNTER - Спросить про скролл (подробно)
+// COUNTER
 
-const counters = document.querySelectorAll('.number__real');
+const counters = document.querySelectorAll('.number');
 
 counters.forEach((counter) => {
 	counter.innerHTML = "0";
@@ -43,4 +43,14 @@ counters.forEach((counter) => {
 	const updateCounter = () => {
 		const target = +counter.getAttribute("data-target");
 		const c = +counter.innerText;
+
+		if (c < target) {
+			counter.innerText = c + 1;
+			setTimeout(updateCounter, 80);
+		} else {
+			counter.innerText = target;
+		}
+	};
+	updateCounter();
+})
 
