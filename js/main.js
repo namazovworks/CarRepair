@@ -44,12 +44,3 @@ counters.forEach((counter) => {
 		const target = +counter.getAttribute("data-target");
 		const c = +counter.innerText;
 
-		if (c < target) {
-			counter.innerText = c + 1;
-			setTimeout(updateCounter, 80);
-		} else {
-			counter.innerText = traget;
-		}
-	};
-	updateCounter();
-})
