@@ -36,7 +36,7 @@ if (menuIcon) {
 // COUNTER
 
 window.addEventListener('scroll', () => {
-
+	
 	const counters = document.querySelectorAll('.number');
 	counters.forEach((number) => {
 	number.innerHTML = "0";
