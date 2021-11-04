@@ -35,23 +35,30 @@ if (menuIcon) {
 
 // COUNTER
 
-window.addEventListener('scroll', () => {
-	
-	const counters = document.querySelectorAll('.number');
-	counters.forEach((number) => {
-	number.innerHTML = "0";
+const counters = document.querySelectorAll('.number');
 
-		const updateCounter = () => {
-			const target = +number.getAttribute("data-target");
-			const c = +number.innerText;
+const updateCounter = (number, e) => {
+  const target = +number.getAttribute("data-target");
+  const c = +number.innerText;
 
-			if (c < target) {
-				number.innerText = c + 1;
-				setTimeout(updateCounter, 100);
-			} else {
-				number.innerText = target;
-			}
-		};
-		updateCounter();
-	})
+  if (c < target && e.intersectionRatio === 1) {
+    number.innerText = c + 1;
+    setTimeout(() => updateCounter(number, e), 100);
+  }
+};
+
+function createObserver(number) {
+  let observer;
+
+  let options = {
+    threshold: 1
+  };
+
+  observer = new IntersectionObserver(([e]) => updateCounter(number, e), options);
+  observer.observe(number);
+}
+
+counters.forEach(number => {
+  number.innerHTML = "0";
+  createObserver(number)
 });
