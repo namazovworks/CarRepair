@@ -1365,12 +1365,6 @@ button {
     padding: 15px;
   }
 
-  .header__menu-open .header-top__btn {
-    display: block;
-    margin-left: 0;
-    margin-right: 15px;
-  }
-
   .header__menu-open .header-bottom {
     display: flex;
     flex-direction: column;
